@@ -1,0 +1,13 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner s = new Scanner(System.in);
+      int n = s.nextInt();
+      int rev = (n % 10) * 100 + ((n/10)%10)*10+(n/100);
+      if(n == rev)
+      System.out.println("YES");
+      else
+      System.out.println("NO");
+  }
+}
