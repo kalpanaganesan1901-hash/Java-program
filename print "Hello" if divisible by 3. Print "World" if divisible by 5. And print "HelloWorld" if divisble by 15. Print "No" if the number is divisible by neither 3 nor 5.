@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextInt();
+
+        if (number % 15 == 0 && number != 0) {
+            System.out.println("HelloWorld");
+        } else if (number % 3 == 0 && number != 0) {
+            System.out.println("Hello");
+        } else if (number % 5 == 0 && number != 0) {
+            System.out.println("World");
+        } else {
+            System.out.println("No");
+        }
+    }
+}
