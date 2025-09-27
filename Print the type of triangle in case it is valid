@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner s = new Scanner(System.in);
+      int a = s.nextInt();
+      int b = s.nextInt();
+      int c = s.nextInt();
+      if(a>0 && a<180 && b>0 && b<180 && c>0 && c<180 &&(a+b+c == 180)){
+        System.out.println("VALID");
+      if(a==b && b==c){
+        System.out.println("EQUILALTERNAL");
+      }
+      else if(a==b || b==c || a==c){
+      System.out.println("ISOSCELES");
+      }
+      else{
+        System.out.println("SCALENE");
+      }
+      }else{
+        System.out.println("NOT VALID");
+      }
+      }
+  
+}
